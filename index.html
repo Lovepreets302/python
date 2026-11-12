@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyMaster Academy | Learn Python</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#" class="logo">Py<span>Master.</span></a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#packages">Packages</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <a href="#packages" class="nav-btn">Start Learning ↗</a>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">🐍 YOUR PYTHON LEARNING JOURNEY</div>
+
+    <h1>Master Python.<br>
+      <span>Build Your Future.</span>
+    </h1>
+
+    <p>
+      Explore powerful Python libraries, understand
+      their features, and learn how developers use
+      them to build amazing projects.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#packages" class="primary-btn">Explore Packages →</a>
+      <a href="#about" class="secondary-btn">Learn More</a>
+    </div>
+
+    <div class="stats">
+      <div><strong>12+</strong><small>Python Packages</small></div>
+      <div><strong>3</strong><small>Learning Levels</small></div>
+      <div><strong>100%</strong><small>Beginner Friendly</small></div>
+    </div>
+  </div>
+
+  <div class="hero-code">
+    <div class="code-header">
+      <span>● ● ●</span>
+      <span>hello_python.py</span>
+    </div>
+    <pre><code><span class="purple">import</span> numpy <span class="purple">as</span> np
+
+<span class="purple">import</span> pandas <span class="purple">as</span> pd
+
+<span class="green"># Start your journey!</span>
+name = <span class="yellow">"Python Developer"</span>
+
+<span class="purple">print</span>(<span class="yellow">"Hello, "</span> + name)
+
+<span class="green"># Keep learning 🚀</span></code></pre>
+  </div>
+</section>
+
+<section class="packages-section" id="packages">
+  <div class="section-heading">
+    <div class="tag">EXPLORE THE LIBRARY</div>
+    <h2>Discover Python <span>Packages</span></h2>
+    <p>Learn what each library does, where it is used,
+       and how to start using it.</p>
+  </div>
+
+  <input
+    type="search"
+    id="searchInput"
+    placeholder="🔍 Search packages like NumPy, Pandas..."
+  >
+
+  <div class="filters">
+    <button class="filter active" data-level="All">All Packages</button>
+    <button class="filter" data-level="Beginner">Beginner</button>
+    <button class="filter" data-level="Intermediate">Intermediate</button>
+    <button class="filter" data-level="Advanced">Advanced</button>
+  </div>
+
+  <div class="package-grid" id="packageGrid"></div>
+  <p id="noResults" class="no-results" hidden>
+    No packages found. Try another search.
+  </p>
+</section>
+
+<section class="about" id="about">
+  <div class="tag">WHY PYMASTER?</div>
+  <h2>Learn. Practice. <span>Become a Developer.</span></h2>
+  <p>
+    Python is used in artificial intelligence, data science,
+    web development, automation, machine learning and more.
+    Explore its ecosystem one package at a time.
+  </p>
+  <a href="#packages" class="primary-btn">Start Exploring →</a>
+</section>
+
+<footer>
+  <a href="#" class="logo">Py<span>Master.</span></a>
+  <p>Made for future Python developers.</p>
+  <p>© 2026 PyMaster Academy. All rights reserved.</p>
+</footer>
+
+<div class="modal" id="packageModal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close-modal" id="closeModal">×</button>
+    <div id="modalDetails"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
